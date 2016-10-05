@@ -1,3 +1,5 @@
 node_modules
 stats.json
 .idea
+angular2/**/*.metadata.json
+angular2/**/*.ngfactory.js

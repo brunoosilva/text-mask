@@ -13,7 +13,7 @@ import createTextMaskInputElement from '../../core/src/createTextMaskInputElemen
     multi: true
   }]
 })
-export default class MaskedInputDirective implements OnInit, ControlValueAccessor{
+export class MaskedInputDirective implements OnInit, ControlValueAccessor{
   private textMaskInputElement: any
   private inputElement:HTMLInputElement
 
@@ -66,5 +66,3 @@ export default class MaskedInputDirective implements OnInit, ControlValueAccesso
     this.renderer.setElementProperty(this.element.nativeElement, 'disabled', isDisabled)
   }
 }
-
-export {MaskedInputDirective as Directive}

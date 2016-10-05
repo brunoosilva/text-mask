@@ -9,11 +9,13 @@
     "removeComments": false,
     "noImplicitAny": false
   },
-  "files": [
+  "include": [
     "src/**/*.ts",
     "example/**/*.ts",
-    "typings/index.d.ts",
     "../core/**/*.ts"
+  ],
+  "exclude": [
+      "../node_modules/**/*.*"
   ],
   "awesomeTypescriptLoaderOptions": {
     "resolveGlobs": true,

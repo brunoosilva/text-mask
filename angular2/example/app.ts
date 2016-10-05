@@ -5,13 +5,13 @@ import {Component, NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 import {FormsModule, FormControl, ReactiveFormsModule} from '@angular/forms'
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic'
-import MaskedInput from '../src/angular2TextMask'
+import {MaskedInputDirective} from '../src/angular2TextMask'
 
 @Component({
   selector: 'app',
   templateUrl: 'app.html'
 })
-class AppComponent {
+export class AppComponent {
   public myModel: string
   public modelWithValue: string
   public formControlInput: FormControl = new FormControl()
@@ -27,7 +27,7 @@ class AppComponent {
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
-  declarations: [AppComponent, MaskedInput],
+  declarations: [AppComponent, MaskedInputDirective],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
