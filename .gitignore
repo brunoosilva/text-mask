@@ -3,3 +3,8 @@ stats.json
 .idea
 angular2/**/*.metadata.json
 angular2/**/*.ngfactory.js
+angular2/example/app.js
+angular2/example/app.js.map
+angular2/example/app.ngfactory.ts
+angular2/src/angular2TextMask.js
+angular2/src/angular2TextMask.js.map
